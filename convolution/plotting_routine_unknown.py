@@ -7,7 +7,7 @@ output_base_dir = "C:/Users/Student/Desktop/physlab/plots/dataset_compare"
 
 PRUNE_LAYERS_OPTIONS = ['CONV', 'FHL', 'SHL', 'FHL+SHL', 'ALL']
 ACCEPTABLE_PRUNE_PERCENTAGES = [i / 100 for i in range(0, 110, 10)]  # 0.0, 0.1, ... 1.0
-ACCEPTABLE_BATCH_SIZES = [1024]
+ACCEPTABLE_BATCH_SIZES = [64]
 
 def infer_dataset(path):
     for ds in ['FMNIST', 'MNIST', 'CIFAR']:
